@@ -9,4 +9,15 @@ The project:
 
 The project is a simple demo, but it is intended for further work in SNA of FreeCodeCamp's (FCC) Gitter Chatrooms for improving the FCC programme.
 
+The demo only run in local. It was made to run in localhost port 3000.
+
+To install the project you should have node. Clone/Pull the project into a desired location and run:
+```
+>> npm install
+```
+Then after installation, you can start the project by using:
+```
+>> npm start
+```
+
 Thanks to Gitter Developers Room and the FreeCodeCamp's DataScience Room.
