@@ -11,6 +11,8 @@ The project is a simple demo, but it is intended for further work on SNA of Free
 
 The demo only runs in local. It was made to run in localhost port 3000
 
+IMPORTANT: no persistent memory was used in this project
+
 IMPORTANT: you are also required to create a `config/config.js` folder/file and add:
 * Your Gitter Token (Check https://developer.gitter.im/docs/welcome)
 * Find the id of the target room (please ask if you are interested)
