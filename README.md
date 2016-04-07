@@ -7,7 +7,7 @@ The project:
 * captures data in an express.js server and passes data to a basic front-end (jQuery + d3.js) using socket.io
 * manipulates data and create a simple viz on real time at front-end
 
-The project is a simple demo, but it is intended for further work on SNA of FreeCodeCamp's (FCC) Gitter Chatrooms and improving the FCC programme.
+The project is a simple . It is intended to provide FreeCodeCamp (FCC) with useful metrics about how users are performing in the Gitter chatrooms.
 
 The demo only runs in local. It was made to run in localhost port 3000
 
