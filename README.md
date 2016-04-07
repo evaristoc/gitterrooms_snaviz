@@ -15,6 +15,8 @@ IMPORTANT: you are also required to create a `config/config.js` folder/file and 
 * Your Gitter Token (Check https://developer.gitter.im/docs/welcome)
 * Find the id of the target room (please ask if you are interested)
 
+They should be passed to routes/index.js file as "token" and "roomId" respectively.
+
 To install the project you should have node.js installed. Clone/Pull the project into a desired location and run:
 ```
 >> npm install
