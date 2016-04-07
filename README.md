@@ -9,7 +9,11 @@ The project:
 
 The project is a simple demo, but it is intended for further work on SNA of FreeCodeCamp's (FCC) Gitter Chatrooms and improving the FCC programme.
 
-The demo only runs in local. It was made to run in localhost port 3000.
+The demo only runs in local. It was made to run in localhost port 3000
+
+IMPORTANT: you are also required to create a `config/config.js` folder/file and add:
+* Your Gitter Token (Check https://developer.gitter.im/docs/welcome)
+* Find the id of the target room (please ask if you are interested)
 
 To install the project you should have node.js installed. Clone/Pull the project into a desired location and run:
 ```
@@ -19,6 +23,10 @@ Then after installation, you can start the project by using:
 ```
 >> npm start
 ```
+
+OBS: This demo makes sense for very populated, very active rooms at Gitter.
+
+You can reach me at varikvi@yahoo.com
 
 ---
 
