@@ -4,10 +4,14 @@ var relations = {};
 var param = {"tw":"950", "th":"500"};
 var svg = d3
     .select("body #chart")
+    .classed("svg-container", true)
     .append("svg")
-    .attr("width", param.tw).attr("height", param.th)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 600 400")
+    .classed("svg-content-responsive", true);
+    //.attr("width", param.tw).attr("height", param.th)
 
-    
+var width = window.innerWidth, height = window.innerHeight;
 
 var force = d3.layout.force()
             .nodes(data.nodes)
@@ -15,7 +19,8 @@ var force = d3.layout.force()
             .gravity(.05)
             .distance(100)
             .charge(-100)
-            .size([param.tw, param.th]);
+            .size([$("svg").width(),$("svg").height()])
+            //.size([param.tw, param.th]);
 
    
 var link = svg
@@ -48,7 +53,7 @@ socket.on("add", function(ds){
     
     // brute-force: removing existing circles, lines and texts
     $("circle").remove()
-    $("text").remove()
+    $("#chart > text").remove()
     $("line").remove()
 
 
@@ -111,10 +116,12 @@ socket.on("add", function(ds){
     force.on("tick", function() {
         $("line").each(function( index ){
           //console.log( data.links[ index ].source.x );
+          if(data.links[ index ]) {
           $(".link."+index).children("line").attr("x1",data.links[ index ].source.x)
           $(".link."+index).children("line").attr("x2",data.links[ index ].target.x)
           $(".link."+index).children("line").attr("y1",data.links[ index ].source.y)
-          $(".link."+index).children("line").attr("y2",data.links[ index ].target.y)          
+          $(".link."+index).children("line").attr("y2",data.links[ index ].target.y)
+        }
           
         })
         
