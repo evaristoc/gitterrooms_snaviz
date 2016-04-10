@@ -1,15 +1,31 @@
 <html>
 <head>
 <title>Chat with socket.io</title>
-<style rel="stylesheets" type="text/css" href='/stylesheets/style.css'></style>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+<link rel="stylesheet" type="text/css" href='/stylesheets/style.css'/>
 </head>
 <body>
 <!-- VEEEERY BASIC FRONT END FOR NOW... -->
-<div id='chart'></div>
-<div id ='chat'></div> 
+<div class="row toprow">
+	<div class="col-xs-10">
+		<div id='chart'></div>
+	</div>
+	<div class="col-xs-2">
+	 <p>Message Counter</p>
+	 <p class="mcount">0</p>
+	</div>
+<!-- <div id ='chat'></div> -->
+</div>
+<div class="row bottomrow">
+	<div class="col-xs-12">
+	 <p>Live map</p>
+	 <div id='map'></div>
+	</div>
+</div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script type="text/javascript" src="/javascripts/sna_example.js"></script>
+<script type="text/javascript" src="/javascripts/message_counter.js"></script>
 </body>
 </html>

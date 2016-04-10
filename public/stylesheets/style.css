@@ -11,20 +11,47 @@ a {
 height: 500px;
 }
 
-<style>
-
 .link {
   stroke-width:8px;
 }
 
 .node text {
-stroke:#333;
-cursos:pointer;
+cursor:pointer;
 }
 
 .node circle{
 stroke:#fff;
-stroke-width:3px;
 }
 
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
 
+p.mcount {
+	font-size: 400%;
+	margin-top: -20px;
+}
+
+.line{
+  fill: none;
+  stroke: #000;
+}
+
+.toprow {
+	height: 80%;
+}
+
+.bottomrow {
+	height: 20%;
+}
