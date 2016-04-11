@@ -7,6 +7,7 @@ var duration = 750
 var n = 243
 var now = new Date(Date.now() - duration)
 var countAxis = d3.range(n).map(function() { return 0; });
+var sstart = Date.now()
 
 var w = $(".row").width()
 
@@ -17,7 +18,9 @@ var margin = {top: 6, right: 0, bottom: 20, left: 40},
 socket.on("add", function(ds){
 	counter ++
 	count ++
-	$(".mcount").html(counter)
+	$(".mc").html(counter)
+	var mpm = Math.floor((counter / ((Date.now() - sstart) / 60000)) * 100) / 100
+	$(".mpm").html(mpm)
 })
 
 var x = d3.time.scale()
