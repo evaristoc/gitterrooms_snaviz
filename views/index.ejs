@@ -2,6 +2,7 @@
 <head>
 <title>Chat with socket.io</title>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
 <link rel="stylesheet" type="text/css" href='/stylesheets/style.css'/>
 </head>
 <body>
@@ -11,8 +12,18 @@
 		<div id='chart'></div>
 	</div>
 	<div class="col-xs-2">
-	 <p>Message Counter</p>
-	 <p class="mcount">0</p>
+	<div class="ui card">
+		<div class="content">
+		<div class="right floated meta">LIVE</div>
+		<i class="wifi icon"></i> Freecodecamp
+		</div>
+		<div class="content">
+			<p>Message Counter</p>
+	 		<p class="mcount mc">0</p>
+	 		<p>Messages per minute</p>
+	 		<p class="mcount mpm">0.00</p>
+		</div>
+	</div>
 	</div>
 <!-- <div id ='chat'></div> -->
 </div>
@@ -25,6 +36,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.js"></script>
 <script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
 <script type="text/javascript" src="/javascripts/sna_example.js"></script>
 <script type="text/javascript" src="/javascripts/message_counter.js"></script>
 </body>
