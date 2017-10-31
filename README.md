@@ -1,5 +1,5 @@
-#Real Time GitterRooms Net Viz
-###Simple Network Chart of users posting at gitter room
+# Real Time GitterRooms Net Viz
+### Simple Network Chart of users posting at gitter room
 
 The project:
 * is Full JS stack
@@ -10,6 +10,8 @@ The project:
 The project is a simple . It is intended to provide FreeCodeCamp (FCC) with useful metrics about how users are performing in the Gitter chatrooms.
 
 The demo only runs in local. It was made to run in localhost port 3000
+
+You can see this project in action at https://youtu.be/KM-VY4z_PLY (by Koustuv Sinha)
 
 IMPORTANT: no persistent memory was used in this project
 
