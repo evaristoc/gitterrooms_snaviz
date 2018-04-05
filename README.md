@@ -32,6 +32,10 @@ Then after installation, you can start the project by using:
 
 OBS: This demo makes sense for very populated, very active rooms at Gitter.
 
+## Demo
+
+[![Demo](http://img.youtube.com/vi/KM-VY4z_PLY/0.jpg)](http://www.youtube.com/watch?v=KM-VY4z_PLY)
+
 You can reach me at varikvi@yahoo.com
 
 ---
